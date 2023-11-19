@@ -20,7 +20,7 @@
 
               <div class="goals-day">
                 <p class="title">Mi objetivo del día</p>
-                <p class="description">Éstos son tus objetivos del día, cumplirlos te acerca a tus sueños</p>
+                <p class="description">Éstos son tus objetivos del día, cumplirlos te acerca a tus sueños.</p>
 
                 <p class="subtitle description">
                   Llevo <span class="primary-color">{{valueRange1}}</span>/<span class="secondary-color">{{maxValueRange1}}</span> investigaciones
@@ -43,7 +43,7 @@
               <div class="main-title-lower-block">
                 <p class="title">Recordatorios</p>
               </div>
-              <ion-slides [options]="slideOptions" style="width: 100%;">
+              <ion-slides [options]="slideOptions">
                 <ion-slide *ngFor="let card of cards; let i = index">
                   <app-card [type]="card.title" [user]="card.description" [time]="card.hour"></app-card>
                 </ion-slide>
