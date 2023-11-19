@@ -1,0 +1,39 @@
+ion-range {
+  --bar-background: #ccc;
+}
+
+.custom-range {
+  --bar-height: 6px; /* Grosor de la barra */
+  --bar-background-active: var(--ion-color-primary); /* Color primario de la barra activa */
+  --bar-background-inactive: #ccc; /* Color de fondo de la barra */
+
+  --thumb-size: 0; /* Oculta el thumb */
+
+  --bar-border-radius: 5px; /* Redondea los extremos de la barra */
+
+  --range-bar-height: var(--bar-height);
+  --range-bar-background: var(--bar-background-inactive);
+  --range-bar-background-active: var(--bar-background-active);
+
+  --knob-size: 0; /* Oculta el "knob" */
+
+  padding: 0;
+  margin-top: -25px;
+
+}
+
+.custom-range .range-bar {
+  border-radius: var(--bar-border-radius);
+  height: var(--range-bar-height);
+  background: var(--range-bar-background);
+}
+
+.custom-range .range-bar-fill {
+  border-radius: var(--bar-border-radius);
+  background: var(--range-bar-background-active);
+}
+
+.custom-range .range-bar-fill-background {
+  border-radius: var(--bar-border-radius);
+  background: var(--range-bar-background);
+}
