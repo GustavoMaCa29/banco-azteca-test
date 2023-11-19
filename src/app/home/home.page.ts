@@ -8,10 +8,18 @@ import {Component, OnInit} from '@angular/core';
 export class HomePage implements OnInit {
 
   slideOptions = {
-    slidesPerView: 1.4,
+    slidesPerView: 1.3,
     centeredSlides: false,
-    spaceBetween: 0
+    // spaceBetween: 15,
   };
+
+  valueRange1 = 1;
+  maxValueRange1 = 2;
+
+  valueRange2 = '500.00';
+  maxValueRange2 = '4,000.00';
+
+  currencyRange2 = "$"
 
   cards = [
 

@@ -1,14 +1,27 @@
-.content {
-  width: 100%;
-  height: 100%;
-  position: relative;
+ion-content {
+  background-color: var(--ion-color-secondary);
+  --background: transparent;
+  --ion-background-color: transparent;
+}
+
+ion-content::part(scroll-content) {
   background-color: var(--ion-color-secondary);
 }
 
 .green-container {
-  height: 365px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 420px;
   background-color: var(--ion-color-primary);
   border-radius: 100% 0% 100% 0% / 0% 38% 62% 100%;
+  z-index: 1;
+}
+
+.grid-container {
+  position: relative;
+  z-index: 2;
 }
 
 .overlay-container {
@@ -30,10 +43,10 @@
 }
 
 .upper-block {
-  padding: 25px;
+  padding: 10px 25px 10px 25px;
 
   .main-title-upper-block {
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
     text-align: center;
     color: white;
   }
@@ -56,8 +69,8 @@
   }
 }
 
-.middle-block {
-  padding: 10px 10px 0 10px;
+.lower-block {
+  padding: 10px 10px 10px 10px;
 
   .main-title-lower-block {
     padding: 0 20px;
@@ -68,15 +81,3 @@
   }
 }
 
-.lower-block {
-  height: 100%;
-  width: 100%;
-
-  .container-lower-block {
-    height: 100px;
-    position: relative;
-    bottom: 0;
-    margin-top: -12px;
-    background: var(--ion-color-secondary);
-  }
-}

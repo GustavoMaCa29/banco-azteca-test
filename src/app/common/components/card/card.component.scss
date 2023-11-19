@@ -1,16 +1,17 @@
 ion-card {
-  width: 220px;
   height: 130px;
+  width: 230px;
   box-shadow: none;
   border-radius: 12px;
   border: 2px solid var(--ion-color-primary);
   text-align: left;
+  background: white;
 }
 
 ion-card-title {
-  font-size: 15px;
+  font-size: 12px;
   margin-left: -10px;
-  margin-top: -7px;
+  margin-top: 0;
 }
 
 ion-card-content {
@@ -68,18 +69,19 @@ ion-img {
 
 @media (min-width: 376px) and (max-width:390px) {
   ion-card {
-    width: 240px;
+    width: 230px;
   }
 }
 
 @media (min-width:321px) and (max-width:375px) {
   ion-card {
-    width: 220px;
+    width: 210px;
   }
 }
 
 @media screen and (max-width: 320px) {
   ion-card {
     width: 200px;
+    height: 120px;
   }
 }
